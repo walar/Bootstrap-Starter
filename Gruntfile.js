@@ -100,8 +100,7 @@ module.exports = function(grunt) {
       grunt: { files: ['Gruntfile.js'] },
 
       less: {
-        files: ['assets/less/*.less'],
-        files: ['assets/less/**/*.less'],
+        files: ['assets/less/*.less', 'assets/less/**/*.less'],
         tasks: ['less:dev', 'autoprefixer:dev']
       },
       js: {
